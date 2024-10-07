@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
-import { useSpring, animated } from '@react-spring/native';
+import Animated, { FadingTransition, JumpingTransition } from 'react-native-reanimated';
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-              <View style={[styles.content]}>
+    <Animated.View layout={JumpingTransition} style={styles.container}>
+              <Animated.View style={[styles.content]}>
           <Text style={[styles.heading]}>
             Welcome to <Text style={styles.highlight}>fURnITUrE</Text>
           </Text>
@@ -14,8 +14,8 @@ const HomeScreen = () => {
             <Text style={styles.highlight}>discover</Text> the perfect pieces
             to <Text style={styles.highlight}>elevate</Text> your home.
           </Text>
-        </View>
-    </View>
+        </Animated.View>
+    </Animated.View>
   );
 };
 

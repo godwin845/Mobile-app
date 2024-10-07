@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Animated } from 'react-native'
 import React from 'react'
 
 const AboutScreen = () => {
   return (
-    <View>
+    <Animated.View layout={FadingTransition}>
       <Text>AboutScreen</Text>
-    </View>
+    </Animated.View>
   )
 }
 const styles = StyleSheet.create({  
