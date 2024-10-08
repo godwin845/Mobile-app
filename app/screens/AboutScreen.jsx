@@ -1,9 +1,10 @@
 import { View, Text, StyleSheet, Animated } from 'react-native'
 import React from 'react'
+import { BounceInUp, FadeInDown, FadingTransition } from 'react-native-reanimated';
 
 const AboutScreen = () => {
   return (
-    <Animated.View layout={FadingTransition}>
+    <Animated.View layout={FadeInDown}>
       <Text>AboutScreen</Text>
     </Animated.View>
   )
