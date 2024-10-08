@@ -7,7 +7,6 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:web": "npx expo export:web  --output-dir web-build"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",
