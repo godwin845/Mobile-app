@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
-import { useSpring, animated } from '@react-spring/native';
+import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
+    <Animated.View entering={FadeIn} exiting={FadeOut} style={styles.container}>
               <View style={[styles.content]}>
           <Text style={[styles.heading]}>
             Welcome to <Text style={styles.highlight}>fURnITUrE</Text>
@@ -15,7 +15,7 @@ const HomeScreen = () => {
             to <Text style={styles.highlight}>elevate</Text> your home.
           </Text>
         </View>
-    </View>
+    </Animated.View>
   );
 };
 
